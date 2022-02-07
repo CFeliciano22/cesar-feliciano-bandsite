@@ -155,12 +155,14 @@ a {
   font-size: 0.8125rem;
   padding-bottom: 1rem;
   line-height: 1.375rem;
+  color: #323232;
 }
 .biography__quote--person {
   font-family: avenir-demi;
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   padding-bottom: 1.5rem;
   line-height: 1.125rem;
+  color: #323232;
 }
 
 .biography__text {
@@ -170,6 +172,7 @@ a {
   flex-direction: column;
   padding-bottom: 1rem;
   font-size: 0.8125rem;
+  color: #323232;
 }
 .biography__text--space {
   padding-bottom: 1rem;
@@ -191,7 +194,7 @@ a {
   }
   .biography__name {
     padding: 0 2.25rem 1.5rem;
-    font-family: avenir-regular;
+    font-family: avenir-demi;
     line-height: 2rem;
     font-size: 1.5rem;
   }
@@ -200,7 +203,7 @@ a {
     font-family: avenir-demi;
     font-size: 1.5rem;
     padding: 0 2.25rem 1rem;
-    line-height: 2rem;
+    line-height: 1.75rem;
   }
   .biography__quote--person {
     font-family: avenir-demi;
@@ -239,6 +242,7 @@ a {
 
   .biography__quote {
     padding: 0 4rem 1rem;
+    max-width: 80%;
   }
   .biography__quote--person {
     padding: 0 4rem 2.25rem;
@@ -255,6 +259,7 @@ a {
   font-family: avenir-demi;
   font-size: 1.5rem;
   line-height: 2.25rem;
+  color: #323232;
 }
 
 .image {
