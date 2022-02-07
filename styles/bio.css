@@ -18,6 +18,11 @@ body, h1, h2, h3, p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #e1e1e1;
+}
+
 .menu {
   background-color: #323232;
 }
@@ -33,15 +38,25 @@ body, h1, h2, h3, p {
   justify-content: center;
   list-style: none;
   padding: 1rem 0;
-  color: #ffffff;
-  font-family: avenir-bold;
-  font-size: 0.625rem;
+  color: #e1e1e1;
+  font-family: avenir-regular;
+  font-size: 0.875rem;
   margin: 0;
   width: 100%;
+  padding-bottom: 0px;
 }
-.nav__list--link-item {
+
+.nav__listlink {
+  color: #ffffff;
+}
+
+.nav__list-link-item {
   text-align: center;
   width: 50%;
+}
+.nav__list-link-item--active {
+  border-bottom: 5px solid #fff;
+  padding-bottom: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -54,26 +69,24 @@ body, h1, h2, h3, p {
   .menu__logo {
     width: 7.5rem;
     padding-top: 0;
-    padding-right: 1.5rem;
+    margin-right: 4rem;
   }
 
   .nav__list {
-    display: flex;
-    list-style: none;
-    padding: 1rem 0;
-    color: #ffffff;
-    font-family: avenir-demi;
-    font-size: 0.75rem;
-    margin: 0;
+    padding: 1rem 0rem 0rem;
   }
-  .nav__list--link-item {
-    border-bottom: 5px solid transparent;
-    padding-right: 1.5rem;
+
+  .nav__list-link-item {
+    padding-top: 0.25rem;
+    margin-right: 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .menu {
-    padding: 0 4rem;
+    padding: 0rem 7.5rem;
+  }
+  .menu__logo {
+    margin-right: 2.5rem;
   }
 }
 .hero {
@@ -82,7 +95,7 @@ body, h1, h2, h3, p {
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
-  background-color: #323232;
+  background-color: rgba(50, 50, 50, 0.5);
   height: 20rem;
   width: 100%;
   position: relative;
@@ -98,12 +111,6 @@ body, h1, h2, h3, p {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(/assets/Images/hero-bio.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
-    background-color: #323232;
     height: 30rem;
     width: 100%;
     position: relative;
@@ -120,7 +127,7 @@ body, h1, h2, h3, p {
 }
 @media screen and (min-width: 1280px) {
   .hero__title {
-    padding-left: 4rem;
+    padding-left: 7.5rem;
   }
 }
 .biography {
@@ -183,7 +190,7 @@ body, h1, h2, h3, p {
     padding: 0 2.25rem 2.25rem;
   }
   .biography__name {
-    padding: 0 2.25rem 2.25rem;
+    padding: 0 2.25rem 1.5rem;
     font-family: avenir-regular;
     line-height: 2rem;
     font-size: 1.5rem;
@@ -218,7 +225,7 @@ body, h1, h2, h3, p {
 }
 @media screen and (min-width: 1280px) {
   .biography {
-    padding: 0 4rem;
+    padding: 0 7.5rem;
   }
   .biography__image {
     padding: 0 4rem 2.25rem;
@@ -227,7 +234,7 @@ body, h1, h2, h3, p {
     padding: 0 4rem 2.25rem;
   }
   .biography__name {
-    padding: 0 4rem 2.25rem;
+    padding: 0 4rem 1.5rem;
   }
 
   .biography__quote {
@@ -282,7 +289,7 @@ body, h1, h2, h3, p {
 }
 @media screen and (min-width: 1280px) {
   .image-container {
-    padding: 0 4rem;
+    padding: 0 7.5rem;
   }
 }
 .footer {
@@ -333,6 +340,7 @@ body, h1, h2, h3, p {
     font-family: avenir-demi;
     font-size: 2.25rem;
     line-height: 2.75rem;
+    padding-right: 1.5rem;
   }
   .footer__band-logo {
     padding: 2rem 0 1rem;
@@ -352,6 +360,7 @@ body, h1, h2, h3, p {
 
   .footer__logo-container {
     display: flex;
+    align-items: center;
   }
 
   .footer__contact-container {
@@ -370,10 +379,10 @@ body, h1, h2, h3, p {
 }
 @media screen and (min-width: 1280px) {
   .footer {
-    padding: 2.25rem 4rem;
+    padding: 2.25rem 7.5rem;
   }
   .footer__band-logo {
-    right: 4rem;
+    right: 7.5rem;
   }
 
   .footer__contact-container--agents {
