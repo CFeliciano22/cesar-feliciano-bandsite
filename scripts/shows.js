@@ -94,5 +94,4 @@ function showsDisplay(showsArray){
         shows.appendChild(button);
     }
 }
-
 showsDisplay(showsArray)
