@@ -56,7 +56,6 @@ function displayComments(commentArray) {
 
 displayComments(commentArray);
 
-
 let formCta = document.querySelector(".comments__textbox")
 
 
