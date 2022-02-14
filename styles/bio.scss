@@ -2,6 +2,7 @@
 @use 'partials/colors' as *;
 @use 'partials/global' as *;
 
+
 *{
     box-sizing: border-box;   
 } 
@@ -361,6 +362,7 @@ a {
             margin-bottom: 1rem;
             border-color: $mercury;  
             background-color: $alabaster; 
+            border: 1px solid $mercury;
             }
         &--name:active{
             border-color: $black;
@@ -372,7 +374,7 @@ a {
             margin-bottom: 1rem;
             border-color: $mercury;
             background-color: $alabaster ;
-            
+            border: 1px solid $mercury;
         }
         &--comment:active{
             border-color: $black;
@@ -392,9 +394,12 @@ a {
                 border-radius: .25rem;
                 line-height: 1.25rem;
                 margin-bottom: 1rem;
+                border: 0px;
 
             }
-        
+                &--button:hover{
+                    background-color: $dark-black;
+                }
         }
     }
 

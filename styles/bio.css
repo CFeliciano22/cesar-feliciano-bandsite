@@ -330,6 +330,7 @@ a {
   margin-bottom: 1rem;
   border-color: #e1e1e1;
   background-color: #fafafa;
+  border: 1px solid #e1e1e1;
 }
 .comments__textbox--name:active {
   border-color: #323232;
@@ -340,6 +341,7 @@ a {
   margin-bottom: 1rem;
   border-color: #e1e1e1;
   background-color: #fafafa;
+  border: 1px solid #e1e1e1;
 }
 .comments__textbox--comment:active {
   border-color: #323232;
@@ -357,6 +359,10 @@ a {
   border-radius: 0.25rem;
   line-height: 1.25rem;
   margin-bottom: 1rem;
+  border: 0px;
+}
+.comments__textbox--button:hover {
+  background-color: #000000;
 }
 
 @media screen and (min-width: 768px) {
