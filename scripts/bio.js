@@ -69,7 +69,8 @@ formCta.addEventListener("submit", (e) =>{
         commentList.innerText = "";
         commentArray.unshift({
             name: nameText,
-            comment: commentText
+            comment: commentText,
+            date:"02/14/2022"
         });
         for(i = 0; i < commentArray.length; i=i+1){
             displayComments(commentArray);

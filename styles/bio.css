@@ -59,6 +59,10 @@ a {
   padding-bottom: 1rem;
 }
 
+.nav__list-link-item:hover {
+  border-bottom: 5px solid #fff;
+}
+
 @media screen and (min-width: 768px) {
   .menu {
     background-color: #323232;
@@ -400,19 +404,16 @@ a {
   display: flex;
   color: #323232;
 }
-
 .post__items {
   list-style-type: none;
   padding: 0;
 }
-
 .post__list-items {
   border-bottom: 1px solid #e1e1e1;
   padding-top: 1rem;
   padding-left: 3.5rem;
   position: relative;
 }
-
 .post__list-items--top {
   border-bottom: 1px solid #e1e1e1;
   border-top: 1px solid #e1e1e1;
@@ -420,26 +421,22 @@ a {
   padding-left: 3.5rem;
   position: relative;
 }
-
 .post__header {
   display: flex;
   justify-content: space-between;
   font-family: avenir-demi;
   font-size: 0.875rem;
 }
-
 .post__header--date {
   color: #e1e1e1;
   font-family: avenir-regular;
 }
-
 .post__comment {
   font-family: avenir-regular;
   padding-top: 1rem;
   font-size: 0.8125rem;
   padding-bottom: 1rem;
 }
-
 .post__avatar {
   width: 2.25rem;
   height: 2.25rem;
@@ -455,7 +452,6 @@ a {
     width: 80%;
     padding-left: 7rem;
   }
-
   .post__avatar {
     width: 3rem;
     height: 3rem;
