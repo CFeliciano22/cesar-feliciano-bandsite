@@ -2,11 +2,16 @@ const url = "https://project-1-api.herokuapp.com/";
 
 const apiKey = "61138c57-8e51-4652-a02b-4977e486d889";
 const commentList = document.querySelector(".post__items");
+
+
+function getComments(){
 axios
     .get(url + "comments?api_key=" + apiKey)
         .then(response => {
             console.log(response.data);
-            let commentArray = response.data;
+            let commentArray = response.data.sort((a,b) => {
+                return b.timestamp - a.timestamp
+            });
 
             commentArray.forEach((item) => {
 
@@ -21,7 +26,7 @@ axios
 
                 let headDate = document.createElement("p");
                 headDate.classList.add("post__header--date");
-                headDate.innerText = item.timestamp;
+                headDate.innerText = new Date(Number(item.timestamp));
 
                 let text = document.createElement("p");
                 text.classList.add("post__comment");
@@ -43,8 +48,9 @@ axios
         .catch(err => {
             console.log(err);
         });
+    }
 
-
+getComments();
 
 
 let formCta = document.querySelector(".comments__textbox");
@@ -65,47 +71,48 @@ formCta.addEventListener("submit", (e) =>{
             axios
                 .post(url + "comments?api_key=" + apiKey, newComment)
                     .then(response => {
-                        console.log(response);
-                        axios
-                            .get(url + "comments?api_key=" + apiKey)
-                                .then(response => {
-                                    console.log(response.data);
-                                    let commentArray = response.data;
-                                    commentArray.forEach((item) => {
+                        getComments();
+                        // console.log(response);
+                        // axios
+                        //     .get(url + "comments?api_key=" + apiKey)
+                        //         .then(response => {
+                        //             console.log(response.data);
+                        //             let commentArray = response.data;
+                        //             commentArray.forEach((item) => {
 
-                                        let listItems = document.createElement("li");
-                                        listItems.classList.add("post__list-items", "post__list-items--top");
+                        //                 let listItems = document.createElement("li");
+                        //                 listItems.classList.add("post__list-items", "post__list-items--top");
                         
-                                        let postHeader = document.createElement("div");
-                                        postHeader.classList.add("post__header");
+                        //                 let postHeader = document.createElement("div");
+                        //                 postHeader.classList.add("post__header");
                         
-                                        let headName = document.createElement("h3");
-                                        headName.innerText = item.name;
+                        //                 let headName = document.createElement("h3");
+                        //                 headName.innerText = item.name;
                         
-                                        let headDate = document.createElement("p");
-                                        headDate.classList.add("post__header--date");
-                                        headDate.innerText = item.timestamp;
+                        //                 let headDate = document.createElement("p");
+                        //                 headDate.classList.add("post__header--date");
+                        //                 headDate.innerText = item.timestamp;
                         
-                                        let text = document.createElement("p");
-                                        text.classList.add("post__comment");
-                                        text.innerText = item.comment;
+                        //                 let text = document.createElement("p");
+                        //                 text.classList.add("post__comment");
+                        //                 text.innerText = item.comment;
                         
-                                        let avatar = document.createElement("img");
-                                        avatar.classList.add("post__avatar");
+                        //                 let avatar = document.createElement("img");
+                        //                 avatar.classList.add("post__avatar");
                         
                         
-                                        commentList.appendChild(listItems);
-                                        listItems.appendChild(postHeader);
-                                        postHeader.appendChild(headName);
-                                        postHeader.appendChild(headDate);
-                                        listItems.appendChild(text);
-                                        listItems.appendChild(avatar);
-                                    });
+                        //                 commentList.appendChild(listItems);
+                        //                 listItems.appendChild(postHeader);
+                        //                 postHeader.appendChild(headName);
+                        //                 postHeader.appendChild(headDate);
+                        //                 listItems.appendChild(text);
+                        //                 listItems.appendChild(avatar);
+                        //             });
                                 })
                                 .catch(err => {
                                     console.log(err);
                                 });
-                    });
+                    // });
                     
                     
                   
