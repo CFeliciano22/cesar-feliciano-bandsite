@@ -3,97 +3,97 @@
 @use 'partials/global' as *;
 
 
-*{
-    box-sizing: border-box;   
-} 
+// *{
+//     box-sizing: border-box;   
+// } 
 
-body,h1,h2,h3,p{
-    margin: 0;
-}
+// body,h1,h2,h3,p{
+//     margin: 0;
+// }
 
-a {
-    text-decoration: none;
-    color: $mercury;
-}
+// a {
+//     text-decoration: none;
+//     color: $mercury;
+// }
 
-.menu{
-    background-color: $black; 
+// .menu{
+//     background-color: $black; 
 
-    &__logo{
-        width: 7.5rem;
-        padding-top: 1rem;
-        display:block;
-        margin: auto;
-    }
-}
+//     &__logo{
+//         width: 7.5rem;
+//         padding-top: 1rem;
+//         display:block;
+//         margin: auto;
+//     }
+// }
 
-.nav__list{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 1rem 0;
-    color: $mercury;
-    font-family: avenir-regular;
-    font-size: .875rem;
-    margin: 0;
-    width: 100%;
-    padding-bottom: 0px;
-}
+// .nav__list{
+//     display: flex;
+//     justify-content: center;
+//     list-style: none;
+//     padding: 1rem 0;
+//     color: $mercury;
+//     font-family: avenir-regular;
+//     font-size: .875rem;
+//     margin: 0;
+//     width: 100%;
+//     padding-bottom: 0px;
+// }
 
-.nav__listlink{
-    color: $white;
-}
-    .nav__list-link-item{
-        text-align: center;
-        width: 50%;
+// .nav__listlink{
+//     color: $white;
+// }
+//     .nav__list-link-item{
+//         text-align: center;
+//         width: 50%;
 
-        &--active{
-            border-bottom: 5px solid #fff;
-            padding-bottom: 1rem;
-        }
-    }
+//         &--active{
+//             border-bottom: 5px solid #fff;
+//             padding-bottom: 1rem;
+//         }
+//     }
 
-    .nav__list-link-item:hover{
-        border-bottom: 5px solid #fff;
-    }
+//     .nav__list-link-item:hover{
+//         border-bottom: 5px solid #fff;
+//     }
 
 
-@media screen and (min-width: 768px){
+// @media screen and (min-width: 768px){
 
-.menu{
-    background-color: $black; 
-    display:flex;
-    align-items: center;
-    padding: 0 2.25rem;
+// .menu{
+//     background-color: $black; 
+//     display:flex;
+//     align-items: center;
+//     padding: 0 2.25rem;
 
-    &__logo{
-        width: 7.5rem;
-        padding-top: 0;
-        margin-right: 4rem;
-    }
-}
+//     &__logo{
+//         width: 7.5rem;
+//         padding-top: 0;
+//         margin-right: 4rem;
+//     }
+// }
 
-.nav__list{
-    padding: 1rem 0rem 0rem;
+// .nav__list{
+//     padding: 1rem 0rem 0rem;
     
-}
+// }
 
-.nav__list-link-item{
-    padding-top: .25rem;
-    margin-right: 2.25rem;
+// .nav__list-link-item{
+//     padding-top: .25rem;
+//     margin-right: 2.25rem;
 
-}
-}
+// }
+// }
     
-@media screen and (min-width: 1280px) {
-    .menu{
-        padding: 0rem 7.5rem;
+// @media screen and (min-width: 1280px) {
+//     .menu{
+//         padding: 0rem 7.5rem;
 
-        &__logo{
-            margin-right: 2.5rem;
-        }
-    }
-}
+//         &__logo{
+//             margin-right: 2.5rem;
+//         }
+//     }
+// }
 
 .hero{
     background-image:url(/assets/Images/hero-shows.jpg);
@@ -306,115 +306,115 @@ a {
     }
 }
 
-.footer{
-    background-color: $black;
-    color: $white;
-    padding: 1rem;
+// .footer{
+//     background-color: $black;
+//     color: $white;
+//     padding: 1rem;
 
-    &__title{
-        padding-bottom: 1rem;
-        font-family: avenir-demi;
-        font-size: 1.5rem;
-        line-height: 2rem;
-    }
+//     &__title{
+//         padding-bottom: 1rem;
+//         font-family: avenir-demi;
+//         font-size: 1.5rem;
+//         line-height: 2rem;
+//     }
 
-    &__logo{
-        padding-bottom: 1rem;
-        padding-right: 1rem;
-    }
+//     &__logo{
+//         padding-bottom: 1rem;
+//         padding-right: 1rem;
+//     }
 
-    &__band-logo{
-        padding: 2rem 0 1rem;
-    }
+//     &__band-logo{
+//         padding: 2rem 0 1rem;
+//     }
     
-    &__copyright{
-        font-family: avenir-regular;
-        font-size: .8125rem;
-        line-height: 1.125rem;
-    }
-}
+//     &__copyright{
+//         font-family: avenir-regular;
+//         font-size: .8125rem;
+//         line-height: 1.125rem;
+//     }
+// }
 
-.footer__contact-container{
-    font-family: avenir-regular;
-    font-size: .8125rem;
-    line-height: 1.125rem;
+// .footer__contact-container{
+//     font-family: avenir-regular;
+//     font-size: .8125rem;
+//     line-height: 1.125rem;
 
-    &--agents{
-        padding-bottom: 1rem;
-    }
+//     &--agents{
+//         padding-bottom: 1rem;
+//     }
     
-    &--demi{
-        font-family: avenir-demi;
-    }
-}
+//     &--demi{
+//         font-family: avenir-demi;
+//     }
+// }
 
-@media screen and (min-width:768px) {
-    .footer{
-        background-color: $black;
-        color: $white;
-        padding: 2.25rem;
-        position: relative;
+// @media screen and (min-width:768px) {
+//     .footer{
+//         background-color: $black;
+//         color: $white;
+//         padding: 2.25rem;
+//         position: relative;
 
-        &__title{
-            padding-bottom: 2.25rem;
-            font-family: avenir-demi;
-            font-size: 2.25rem;
-            line-height: 2.75rem;
-            padding-right: 1.5rem;
-        }
-        &__band-logo{
-            padding: 2rem 0 1rem;
-            position: absolute;
-            top: 1rem;
-            right: 2.25rem;
-        }
+//         &__title{
+//             padding-bottom: 2.25rem;
+//             font-family: avenir-demi;
+//             font-size: 2.25rem;
+//             line-height: 2.75rem;
+//             padding-right: 1.5rem;
+//         }
+//         &__band-logo{
+//             padding: 2rem 0 1rem;
+//             position: absolute;
+//             top: 1rem;
+//             right: 2.25rem;
+//         }
         
-        &__copyright{
-            font-family: avenir-regular;
-            font-size: .8125rem;
-            line-height: 1.125rem;
-    }
+//         &__copyright{
+//             font-family: avenir-regular;
+//             font-size: .8125rem;
+//             line-height: 1.125rem;
+//     }
     
-    .footer__logo{
-        padding-bottom: 1.5rem;
-        padding-left: .5rem;
+//     .footer__logo{
+//         padding-bottom: 1.5rem;
+//         padding-left: .5rem;
         
-    }
-    }
+//     }
+//     }
 
-    .footer__logo-container{
-        display: flex;
-        align-items: center;
+//     .footer__logo-container{
+//         display: flex;
+//         align-items: center;
         
-    }
+//     }
 
-    .footer__contact-container{
-        font-family: avenir-regular;
-        font-size: .8125rem;
-        line-height: 1.125rem;
-        display: flex;
+//     .footer__contact-container{
+//         font-family: avenir-regular;
+//         font-size: .8125rem;
+//         line-height: 1.125rem;
+//         display: flex;
 
-        &--agents{
-            padding-bottom: 2.25rem;
-            padding-right: 2.25rem;
-        }
+//         &--agents{
+//             padding-bottom: 2.25rem;
+//             padding-right: 2.25rem;
+//         }
         
-        &--demi{
-            font-family: avenir-demi;
-        }
-    }
-}
+//         &--demi{
+//             font-family: avenir-demi;
+//         }
+//     }
+// }
 
-@media  screen and (min-width:1280px) {
-    .footer{
-        padding: 2.25rem 7.5rem;
+// @media  screen and (min-width:1280px) {
+//     .footer{
+//         padding: 2.25rem 7.5rem;
 
-        &__band-logo{
-        right:7.5rem;
-    }
-    }
+//         &__band-logo{
+//         right:7.5rem;
+//     }
+//     }
 
-    .footer__contact-container--agents{
-        padding-right: 3.93rem;
-    }
-}
+//     .footer__contact-container--agents{
+//         padding-right: 3.93rem;
+//     }
+// }
