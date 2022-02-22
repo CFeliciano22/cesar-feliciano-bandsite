@@ -26,7 +26,7 @@ axios
 
                 let headDate = document.createElement("p");
                 headDate.classList.add("post__header--date");
-                headDate.innerText = new Date(Number(item.timestamp));
+                headDate.innerText = new Date(item.timestamp).toDateString();
 
                 let text = document.createElement("p");
                 text.classList.add("post__comment");

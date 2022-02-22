@@ -1,99 +1,8 @@
 @use 'partials/fonts' as *;
 @use 'partials/colors' as *;
 @use 'partials/global' as *;
+@use './partials/mixins' as *;
 
-
-// *{
-//     box-sizing: border-box;   
-// } 
-
-// body,h1,h2,h3,p{
-//     margin: 0;
-// }
-
-// a {
-//     text-decoration: none;
-//     color: $mercury;
-// }
-
-// .menu{
-//     background-color: $black; 
-
-//     &__logo{
-//         width: 7.5rem;
-//         padding-top: 1rem;
-//         display:block;
-//         margin: auto;
-//     }
-// }
-
-// .nav__list{
-//     display: flex;
-//     justify-content: center;
-//     list-style: none;
-//     padding: 1rem 0;
-//     color: $mercury;
-//     font-family: avenir-regular;
-//     font-size: .875rem;
-//     margin: 0;
-//     width: 100%;
-//     padding-bottom: 0px;
-// }
-
-// .nav__listlink{
-//     color: $white;
-// }
-//     .nav__list-link-item{
-//         text-align: center;
-//         width: 50%;
-
-//         &--active{
-//             border-bottom: 5px solid #fff;
-//             padding-bottom: 1rem;
-//         }
-//     }
-// .nav__list-link-item:hover{
-//     border-bottom: 5px solid #fff;
-// }
-
-// @media screen and (min-width: 768px){
-
-// .menu{
-//     background-color: $black; 
-//     display:flex;
-//     align-items: center;
-//     padding: 0 2.25rem;
-
-//     &__logo{
-//         width: 7.5rem;
-//         padding-top: 0;
-//         margin-right: 4rem;
-//     }
-// }
-
-// .nav__list{
-//     padding: 1rem 0rem 0rem;
-    
-// }
-
-// .nav__list-link-item{
-//     padding-top: .25rem;
-//     margin-right: 2.25rem;
-
-// }
-// }
-    
-// @media screen and (min-width: 1280px) {
-//     .menu{
-//         padding: 0rem 7.5rem;
-
-
-//         &__logo{
-//             margin-right: 2.5rem;
-//         }
-    
-//     }
-// }
 
 .hero{
     background-image:url(/assets/Images/hero-bio.jpg);
@@ -116,7 +25,7 @@
     }
 }
 
-@media screen and (min-width:768px){
+@include tablet{
     .hero{
         height: 30rem;
         width: 100%;
@@ -135,7 +44,7 @@
     }
 }
 
-@media screen and (min-width:1280px) {
+@include desktop {
     .hero__title{
         padding-left: 7.5rem;
     }
@@ -197,7 +106,7 @@
         padding-bottom: 1rem;
     }
 }
-@media screen and(min-width:768px) {
+@include tablet {
     .biography{
         display: flex;
         padding: 0 2.25rem;
@@ -252,7 +161,7 @@
     }
     }
     
-@media screen and (min-width:1280px) {
+@include desktop {
     .biography{
         padding: 0 7.5rem;
 
@@ -299,7 +208,7 @@
     max-width: 100%;
 }
 
-@media screen and (min-width:768px){
+@include tablet{
     
 .image-container{
     background-color: $alabaster;
@@ -327,7 +236,7 @@
 }
 }
 
-@media screen and (min-width:1280px) {
+@include desktop {
     .image-container{
         padding: 0 7.5rem;
     }
@@ -349,7 +258,8 @@
     &__title{
         font-family: avenir-demi;
         line-height: 2.25rem;
-        font-size: 1.5rem;    
+        font-size: 1.5rem; 
+        padding-bottom: .5rem;   
     }
     &__textbox{
         display: flex;
@@ -375,6 +285,8 @@
             border-color: $mercury;
             background-color: $alabaster ;
             border: 1px solid $mercury;
+            padding-top: 1.25rem;
+            padding-bottom: 3.125rem;
         }
         &--comment:active{
             border-color: $black;
@@ -403,7 +315,7 @@
         }
     }
 
-    @media screen and (min-width:768px) {
+    @include tablet {
         .comments{
             padding: 1.5rem 2.25rem 1.5rem;
         }
@@ -427,7 +339,7 @@
             margin-left: 70%;
         }
     }
-@media screen and (min-width:1280px) {
+@include desktop {
         .comments{
             padding:1.5rem 7.5rem;
         }
@@ -490,7 +402,7 @@
     
 
 
-@media screen and (min-width:768px) {
+@include tablet {
     .post{
         width: 80%;
         padding-left: 7rem;
@@ -502,122 +414,9 @@
     }
 }
 
-@media screen and (min-width:1280px) {
+@include desktop {
     .post{
         padding-left: 16rem;
         width: 70%;
     }
-    
 }
-// .footer{
-//     background-color: $black;
-//     color: $white;
-//     padding: 1rem;
-
-//     &__title{
-//         padding-bottom: 1rem;
-//         font-family: avenir-demi;
-//         font-size: 1.5rem;
-//         line-height: 2rem;
-//     }
-
-//     &__logo{
-//         padding-bottom: 1rem;
-//         padding-right: 1rem;
-//     }
-
-//     &__band-logo{
-//         padding: 2rem 0 1rem;
-//     }
-    
-//     &__copyright{
-//         font-family: avenir-regular;
-//         font-size: .8125rem;
-//         line-height: 1.125rem;
-//     }
-// }
-
-// .footer__contact-container{
-//     font-family: avenir-regular;
-//     font-size: .8125rem;
-//     line-height: 1.125rem;
-
-//     &--agents{
-//         padding-bottom: 1rem;
-//     }
-    
-//     &--demi{
-//         font-family: avenir-demi;
-//     }
-// }
-
-// @media screen and (min-width:768px) {
-//     .footer{
-//         background-color: $black;
-//         color: $white;
-//         padding: 2.25rem;
-//         position: relative;
-
-//         &__title{
-//             padding-bottom: 2.25rem;
-//             font-family: avenir-demi;
-//             font-size: 2.25rem;
-//             line-height: 2.75rem;
-//             padding-right: 1.5rem;
-//         }
-//         &__band-logo{
-//             padding: 2rem 0 1rem;
-//             position: absolute;
-//             top: 1rem;
-//             right: 2.25rem;
-//         }
-        
-//         &__copyright{
-//             font-family: avenir-regular;
-//             font-size: .8125rem;
-//             line-height: 1.125rem;
-//     }
-    
-//     .footer__logo{
-//         padding-bottom: 1.5rem;
-//         padding-left: .5rem;
-        
-//     }
-//     }
-
-//     .footer__logo-container{
-//         display: flex;
-//         align-items: center;
-        
-//     }
-
-//     .footer__contact-container{
-//         font-family: avenir-regular;
-//         font-size: .8125rem;
-//         line-height: 1.125rem;
-//         display: flex;
-
-//         &--agents{
-//             padding-bottom: 2.25rem;
-//             padding-right: 2.25rem;
-//         }
-        
-//         &--demi{
-//             font-family: avenir-demi;
-//         }
-//     }
-// }
-
-// @media  screen and (min-width:1280px) {
-//     .footer{
-//         padding: 2.25rem 7.5rem;
-
-//         &__band-logo{
-//         right:7.5rem;
-//     }
-//     }
-
-//     .footer__contact-container--agents{
-//         padding-right: 3.93rem;
-//     }
-// }

@@ -63,7 +63,7 @@ a {
   border-bottom: 5px solid #fff;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .menu {
     background-color: #323232;
     display: flex;
@@ -85,12 +85,109 @@ a {
     margin-right: 2.25rem;
   }
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .menu {
     padding: 0rem 7.5rem;
   }
   .menu__logo {
     margin-right: 2.5rem;
+  }
+}
+.footer {
+  background-color: #323232;
+  color: #ffffff;
+  padding: 1rem;
+}
+.footer__title {
+  padding-bottom: 1rem;
+  font-family: avenir-demi;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.footer__logo {
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+.footer__band-logo {
+  padding: 2rem 0 1rem;
+}
+.footer__copyright {
+  font-family: avenir-regular;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+
+.footer__contact-container {
+  font-family: avenir-regular;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+.footer__contact-container--agents {
+  padding-bottom: 1rem;
+}
+.footer__contact-container--demi {
+  font-family: avenir-demi;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    background-color: #323232;
+    color: #ffffff;
+    padding: 2.25rem;
+    position: relative;
+  }
+  .footer__title {
+    padding-bottom: 2.25rem;
+    font-family: avenir-demi;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding-right: 1.5rem;
+  }
+  .footer__band-logo {
+    padding: 2rem 0 1rem;
+    position: absolute;
+    top: 1rem;
+    right: 2.25rem;
+  }
+  .footer__copyright {
+    font-family: avenir-regular;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+  }
+  .footer .footer__logo {
+    padding-bottom: 1.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .footer__logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer__contact-container {
+    font-family: avenir-regular;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    display: flex;
+  }
+  .footer__contact-container--agents {
+    padding-bottom: 2.25rem;
+    padding-right: 2.25rem;
+  }
+  .footer__contact-container--demi {
+    font-family: avenir-demi;
+  }
+}
+@media (min-width: 1280px) {
+  .footer {
+    padding: 2.25rem 7.5rem;
+  }
+  .footer__band-logo {
+    right: 7.5rem;
+  }
+
+  .footer__contact-container--agents {
+    padding-right: 3.93rem;
   }
 }
 .hero {
@@ -113,7 +210,7 @@ a {
   top: 8rem;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .hero {
     height: 30rem;
     width: 100%;
@@ -129,7 +226,7 @@ a {
     top: 11rem;
   }
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .hero__title {
     padding-left: 7.5rem;
   }
@@ -182,7 +279,7 @@ a {
   padding-bottom: 1rem;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .biography {
     display: flex;
     padding: 0 2.25rem;
@@ -230,7 +327,7 @@ a {
     padding-left: 1.13rem;
   }
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .biography {
     padding: 0 7.5rem;
   }
@@ -271,7 +368,7 @@ a {
   max-width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .image-container {
     background-color: #fafafa;
     display: flex;
@@ -296,7 +393,7 @@ a {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .image-container {
     padding: 0 7.5rem;
   }
@@ -318,6 +415,7 @@ a {
   font-family: avenir-demi;
   line-height: 2.25rem;
   font-size: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 .comments__textbox {
   display: flex;
@@ -342,6 +440,8 @@ a {
   border-color: #e1e1e1;
   background-color: #fafafa;
   border: 1px solid #e1e1e1;
+  padding-top: 1.25rem;
+  padding-bottom: 3.125rem;
 }
 .comments__textbox--comment:active {
   border-color: #323232;
@@ -365,7 +465,7 @@ a {
   background-color: #000000;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .comments {
     padding: 1.5rem 2.25rem 1.5rem;
   }
@@ -392,7 +492,7 @@ a {
     margin-left: 70%;
   }
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .comments {
     padding: 1.5rem 7.5rem;
   }
@@ -453,7 +553,7 @@ a {
   left: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .post {
     width: 80%;
     padding-left: 7rem;
@@ -463,106 +563,9 @@ a {
     height: 3rem;
   }
 }
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
   .post {
     padding-left: 16rem;
     width: 70%;
-  }
-}
-.footer {
-  background-color: #323232;
-  color: #ffffff;
-  padding: 1rem;
-}
-.footer__title {
-  padding-bottom: 1rem;
-  font-family: avenir-demi;
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-.footer__logo {
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-}
-.footer__band-logo {
-  padding: 2rem 0 1rem;
-}
-.footer__copyright {
-  font-family: avenir-regular;
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-}
-
-.footer__contact-container {
-  font-family: avenir-regular;
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-}
-.footer__contact-container--agents {
-  padding-bottom: 1rem;
-}
-.footer__contact-container--demi {
-  font-family: avenir-demi;
-}
-
-@media screen and (min-width: 768px) {
-  .footer {
-    background-color: #323232;
-    color: #ffffff;
-    padding: 2.25rem;
-    position: relative;
-  }
-  .footer__title {
-    padding-bottom: 2.25rem;
-    font-family: avenir-demi;
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-    padding-right: 1.5rem;
-  }
-  .footer__band-logo {
-    padding: 2rem 0 1rem;
-    position: absolute;
-    top: 1rem;
-    right: 2.25rem;
-  }
-  .footer__copyright {
-    font-family: avenir-regular;
-    font-size: 0.8125rem;
-    line-height: 1.125rem;
-  }
-  .footer .footer__logo {
-    padding-bottom: 1.5rem;
-    padding-left: 0.5rem;
-  }
-
-  .footer__logo-container {
-    display: flex;
-    align-items: center;
-  }
-
-  .footer__contact-container {
-    font-family: avenir-regular;
-    font-size: 0.8125rem;
-    line-height: 1.125rem;
-    display: flex;
-  }
-  .footer__contact-container--agents {
-    padding-bottom: 2.25rem;
-    padding-right: 2.25rem;
-  }
-  .footer__contact-container--demi {
-    font-family: avenir-demi;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer {
-    padding: 2.25rem 7.5rem;
-  }
-  .footer__band-logo {
-    right: 7.5rem;
-  }
-
-  .footer__contact-container--agents {
-    padding-right: 3.93rem;
   }
 }/*# sourceMappingURL=bio.css.map */

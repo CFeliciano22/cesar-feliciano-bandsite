@@ -55,7 +55,7 @@ function getShows(){
 
         let dateContent = document.createElement("p");
         dateContent.classList.add("shows__list--demi");
-        dateContent.innerText = show.date;
+        dateContent.innerText = new Date (Number(show.date)).toDateString();
 
         let lineBreak1 = document.createElement("br");
 
